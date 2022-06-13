@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+figure {
+  margin: 0;
+  /* background: #101010; */
+  /* font-family: Istok Web, sans-serif; */
+  font-weight: 100;
+}
+
+#captioned-gallery {
+  margin-bottom: 3em;
+}
+
+.img {
+  width: 100%;
+}
+
+.discover-main-section div#captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+}
+.discover-main-section figure.slider {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+.discover-main-section figure.slider figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: inherit;
+}
+.discover-main-section figure.slider img {
+  width: 100%;
+  height: auto;
+}
+.discover-main-section figure.slider figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.6rem;
+}
+
+.discover-main-section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.discover-main-section-2 img {
+  width: 500px;
+}
+
+.discover-page-circle-1 {
+  position: absolute;
+  overflow: hidden;
+  width: 35vw;
+  height: 35vw;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.discover-page-circle-1::before {
+  content: "";
+  transform: translateX(-20%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(188, 58, 128, 0.1);
+}
+
+.discover-page-circle-2 {
+  position: absolute;
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  top: 0;
+  left: 20vw;
+  z-index: -1;
+}
+
+.discover-page-circle-2::before {
+  content: "";
+  transform: translateY(-30%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(52, 87, 178, 0.1);
+}
